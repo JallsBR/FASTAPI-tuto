@@ -1,0 +1,19 @@
+python -m venv venv
+pip install fastapi
+.\venv\Scripts\activate.ps1
+
+pip install 'uvicorn[standard]'
+
+fastapi dev main.py
+
+
+-Intalar todas as dependencias de requerimento
+pip instal -r requirements.txt
+
+ - Iniciar
+ uvicorn main:app --reload
+
+ Pagina de teste a API
+ http://127.0.0.1:8000/docs
+ ou para cliente
+ http://127.0.0.1:8000/redoc
